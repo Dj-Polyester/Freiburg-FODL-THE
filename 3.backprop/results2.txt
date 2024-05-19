@@ -1,0 +1,97 @@
+Running XOR experiment...
+
+---------- Model, loss and predictions before the update:
+
+***** Parameters:
+
+Linear.W
+[[ 0.00947718  0.0050133 ]
+ [-0.02045972 -0.00888042]]
+
+Linear.b
+[0.01 0.01]
+
+Linear.W
+[[ 0.01056067 -0.01067808]
+ [-0.00812726 -0.00297441]]
+
+Linear.b
+[0.01 0.01]
+
+***** Gradients:
+
+Linear.W
+[[0. 0.]
+ [0. 0.]]
+
+Linear.b
+[0. 0.]
+
+Linear.W
+[[0. 0.]
+ [0. 0.]]
+
+Linear.b
+[0. 0.]
+
+Loss: 0.6932
+
+Predictions: [0 1 0 1]
+
+Perform one update step.
+
+---------- Model, loss and predictions after 1 update step:
+
+***** Parameters:
+
+Linear.W
+[[ 0.00682189  0.0050134 ]
+ [-0.02045972 -0.00888043]]
+
+Linear.b
+[0.00999934 0.01000015]
+
+Linear.W
+[[ 0.00937552 -0.00949292]
+ [-0.00812766 -0.00297401]]
+
+Linear.b
+[0.00997126 0.01002874]
+
+***** Gradients:
+
+Linear.W
+[[ 2.65529081e-03 -9.81321499e-08]
+ [ 0.00000000e+00  1.20353974e-08]]
+
+Linear.b
+[ 6.59952796e-07 -1.48079383e-07]
+
+Linear.W
+[[ 1.18515697e-03 -1.18515697e-03]
+ [ 4.03589916e-07 -4.03589916e-07]]
+
+Linear.b
+[ 2.8737368e-05 -2.8737368e-05]
+
+Loss: 0.6932
+
+Predictions: [0 1 0 1]
+
+---------- Train for 1000 epochs:
+
+Loss after 100 steps: 0.476299
+Loss after 200 steps: 0.348683
+Loss after 300 steps: 0.347720
+Loss after 400 steps: 0.347113
+Loss after 500 steps: 0.346941
+Loss after 600 steps: 0.346849
+Loss after 700 steps: 0.346793
+Loss after 800 steps: 0.346755
+Loss after 900 steps: 0.347512
+Loss after 1000 steps: 0.346838
+
+---------- Done training.
+
+Final predictions: [0 1 1 1]
+Ground truth:      [0 1 1 0]

@@ -1,0 +1,164 @@
+no reg
+0.weight Parameter containing:
+tensor([[0.9312]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6696], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9218]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6654], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9123]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6612], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9028]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6571], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.8934]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6529], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.8839]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6487], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.8745]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6446], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.8651]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6404], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.8557]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6363], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.8463]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6321], requires_grad=True)
+l2-norm
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+l2-norm with bias
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+untrained net
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)
+0.weight Parameter containing:
+tensor([[0.9407]], requires_grad=True)
+0.bias Parameter containing:
+tensor([0.6738], requires_grad=True)

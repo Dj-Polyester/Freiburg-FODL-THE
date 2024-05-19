@@ -1,0 +1,7 @@
+searcher_name: random_search
+searcher_alg: random_search
+searcher_selection: neps-default
+neps_decision_tree: false
+searcher_args:
+  use_priors: false
+  ignore_fidelity: true

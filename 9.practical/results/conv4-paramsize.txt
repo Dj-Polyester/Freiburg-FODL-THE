@@ -1,0 +1,5 @@
+Running on device: cpu
+Number of params: 41450
+Files already downloaded and verified
+Finished Training
+Accuracy of the network on test images: 48 %

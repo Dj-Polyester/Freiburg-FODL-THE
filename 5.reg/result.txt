@@ -1,0 +1,104 @@
+Train:	X (40000, 784)	y (40000, 10)
+Val:	X (10000, 784)	y (10000, 10)
+Test:	X (10000, 784)	y (10000, 10)
+No regularization.
+Epoch 1 / 20: Train Acc.:  0.8659 Train Loss: 0.4245 Eval Acc.: 0.9468
+Epoch 2 / 20: Train Acc.:  0.9397 Train Loss: 0.1969 Eval Acc.: 0.9529
+Epoch 3 / 20: Train Acc.:  0.9532 Train Loss: 0.1569 Eval Acc.: 0.9575
+Epoch 4 / 20: Train Acc.:  0.9595 Train Loss: 0.1341 Eval Acc.: 0.9551
+Epoch 5 / 20: Train Acc.:  0.9636 Train Loss: 0.1186 Eval Acc.: 0.9585
+Epoch 6 / 20: Train Acc.:  0.9671 Train Loss: 0.1071 Eval Acc.: 0.9622
+Epoch 7 / 20: Train Acc.:  0.9710 Train Loss: 0.0944 Eval Acc.: 0.9537
+Epoch 8 / 20: Train Acc.:  0.9721 Train Loss: 0.0860 Eval Acc.: 0.9621
+Epoch 9 / 20: Train Acc.:  0.9753 Train Loss: 0.0810 Eval Acc.: 0.9606
+Epoch 10 / 20: Train Acc.: 0.9771 Train Loss: 0.0710 Eval Acc.: 0.9674
+Epoch 11 / 20: Train Acc.: 0.9778 Train Loss: 0.0705 Eval Acc.: 0.9638
+Epoch 12 / 20: Train Acc.: 0.9778 Train Loss: 0.0688 Eval Acc.: 0.9652
+Epoch 13 / 20: Train Acc.: 0.9803 Train Loss: 0.0599 Eval Acc.: 0.9634
+Epoch 14 / 20: Train Acc.: 0.9811 Train Loss: 0.0580 Eval Acc.: 0.9614
+Epoch 15 / 20: Train Acc.: 0.9815 Train Loss: 0.0575 Eval Acc.: 0.9620
+Epoch 16 / 20: Train Acc.: 0.9845 Train Loss: 0.0473 Eval Acc.: 0.9659
+Epoch 17 / 20: Train Acc.: 0.9844 Train Loss: 0.0483 Eval Acc.: 0.9672
+Epoch 18 / 20: Train Acc.: 0.9844 Train Loss: 0.0474 Eval Acc.: 0.9664
+Epoch 19 / 20: Train Acc.: 0.9863 Train Loss: 0.0408 Eval Acc.: 0.9663
+Epoch 20 / 20: Train Acc.: 0.9850 Train Loss: 0.0445 Eval Acc.: 0.9609
+L2 regularization.
+Epoch 1 / 20: Train Acc.: 0.8671 Train Loss: 0.4316 Eval Acc.: 0.9302
+Epoch 2 / 20: Train Acc.: 0.9454 Train Loss: 0.1898 Eval Acc.: 0.9504
+Epoch 3 / 20: Train Acc.: 0.9573 Train Loss: 0.1526 Eval Acc.: 0.9557
+Epoch 4 / 20: Train Acc.: 0.9632 Train Loss: 0.1384 Eval Acc.: 0.9594
+Epoch 5 / 20: Train Acc.: 0.9680 Train Loss: 0.1250 Eval Acc.: 0.9645
+Epoch 6 / 20: Train Acc.: 0.9702 Train Loss: 0.1163 Eval Acc.: 0.9604
+Epoch 7 / 20: Train Acc.: 0.9733 Train Loss: 0.1091 Eval Acc.: 0.9630
+Epoch 8 / 20: Train Acc.: 0.9737 Train Loss: 0.1081 Eval Acc.: 0.9664
+Epoch 9 / 20: Train Acc.: 0.9754 Train Loss: 0.1031 Eval Acc.: 0.9664
+Epoch 10 / 20: Train Acc.: 0.9771 Train Loss: 0.0997 Eval Acc.: 0.9644
+Epoch 11 / 20: Train Acc.: 0.9787 Train Loss: 0.0948 Eval Acc.: 0.9640
+Epoch 12 / 20: Train Acc.: 0.9796 Train Loss: 0.0948 Eval Acc.: 0.9599
+Epoch 13 / 20: Train Acc.: 0.9798 Train Loss: 0.0915 Eval Acc.: 0.9635
+Epoch 14 / 20: Train Acc.: 0.9805 Train Loss: 0.0927 Eval Acc.: 0.9690
+Epoch 15 / 20: Train Acc.: 0.9831 Train Loss: 0.0861 Eval Acc.: 0.9650
+Epoch 16 / 20: Train Acc.: 0.9828 Train Loss: 0.0874 Eval Acc.: 0.9662
+Epoch 17 / 20: Train Acc.: 0.9819 Train Loss: 0.0876 Eval Acc.: 0.9650
+Epoch 18 / 20: Train Acc.: 0.9839 Train Loss: 0.0842 Eval Acc.: 0.9638
+Epoch 19 / 20: Train Acc.: 0.9835 Train Loss: 0.0844 Eval Acc.: 0.9665
+Epoch 20 / 20: Train Acc.: 0.9850 Train Loss: 0.0804 Eval Acc.: 0.9653
+L1 regularization.
+Epoch 1 / 20: Train Acc.: 0.8637 Train Loss: 0.4993 Eval Acc.: 0.9357
+Epoch 2 / 20: Train Acc.: 0.9408 Train Loss: 0.2886 Eval Acc.: 0.9387
+Epoch 3 / 20: Train Acc.: 0.9498 Train Loss: 0.2578 Eval Acc.: 0.9529
+Epoch 4 / 20: Train Acc.: 0.9555 Train Loss: 0.2466 Eval Acc.: 0.9463
+Epoch 5 / 20: Train Acc.: 0.9576 Train Loss: 0.2416 Eval Acc.: 0.9632
+Epoch 6 / 20: Train Acc.: 0.9593 Train Loss: 0.2350 Eval Acc.: 0.9590
+Epoch 7 / 20: Train Acc.: 0.9633 Train Loss: 0.2258 Eval Acc.: 0.9526
+Epoch 8 / 20: Train Acc.: 0.9627 Train Loss: 0.2276 Eval Acc.: 0.9585
+Epoch 9 / 20: Train Acc.: 0.9621 Train Loss: 0.2274 Eval Acc.: 0.9642
+Epoch 10 / 20: Train Acc.: 0.9652 Train Loss: 0.2221 Eval Acc.: 0.9586
+Epoch 11 / 20: Train Acc.: 0.9637 Train Loss: 0.2259 Eval Acc.: 0.9644
+Epoch 12 / 20: Train Acc.: 0.9670 Train Loss: 0.2147 Eval Acc.: 0.9631
+Epoch 13 / 20: Train Acc.: 0.9664 Train Loss: 0.2146 Eval Acc.: 0.9614
+Epoch 14 / 20: Train Acc.: 0.9668 Train Loss: 0.2156 Eval Acc.: 0.9609
+Epoch 15 / 20: Train Acc.: 0.9673 Train Loss: 0.2128 Eval Acc.: 0.9591
+Epoch 16 / 20: Train Acc.: 0.9659 Train Loss: 0.2172 Eval Acc.: 0.9557
+Epoch 17 / 20: Train Acc.: 0.9683 Train Loss: 0.2117 Eval Acc.: 0.9580
+Epoch 18 / 20: Train Acc.: 0.9696 Train Loss: 0.2072 Eval Acc.: 0.9651
+Epoch 19 / 20: Train Acc.: 0.9695 Train Loss: 0.2075 Eval Acc.: 0.9633
+Epoch 20 / 20: Train Acc.: 0.9691 Train Loss: 0.2054 Eval Acc.: 0.9639
+Dropout.
+Epoch 1 / 20: Train Acc.: 0.8246 Train Loss: 0.5527 Eval Acc.: 0.9313
+Epoch 2 / 20: Train Acc.: 0.8935 Train Loss: 0.3405 Eval Acc.: 0.9390
+Epoch 3 / 20: Train Acc.: 0.9027 Train Loss: 0.3120 Eval Acc.: 0.9513
+Epoch 4 / 20: Train Acc.: 0.9095 Train Loss: 0.2902 Eval Acc.: 0.9495
+Epoch 5 / 20: Train Acc.: 0.9140 Train Loss: 0.2737 Eval Acc.: 0.9525
+Epoch 6 / 20: Train Acc.: 0.9163 Train Loss: 0.2723 Eval Acc.: 0.9498
+Epoch 7 / 20: Train Acc.: 0.9184 Train Loss: 0.2602 Eval Acc.: 0.9566
+Epoch 8 / 20: Train Acc.: 0.9231 Train Loss: 0.2482 Eval Acc.: 0.9568
+Epoch 9 / 20: Train Acc.: 0.9214 Train Loss: 0.2525 Eval Acc.: 0.9566
+Epoch 10 / 20: Train Acc.: 0.9230 Train Loss: 0.2445 Eval Acc.: 0.9586
+Epoch 11 / 20: Train Acc.: 0.9240 Train Loss: 0.2437 Eval Acc.: 0.9598
+Epoch 12 / 20: Train Acc.: 0.9230 Train Loss: 0.2389 Eval Acc.: 0.9606
+Epoch 13 / 20: Train Acc.: 0.9238 Train Loss: 0.2405 Eval Acc.: 0.9577
+Epoch 14 / 20: Train Acc.: 0.9255 Train Loss: 0.2330 Eval Acc.: 0.9581
+Epoch 15 / 20: Train Acc.: 0.9275 Train Loss: 0.2307 Eval Acc.: 0.9596
+Epoch 16 / 20: Train Acc.: 0.9258 Train Loss: 0.2347 Eval Acc.: 0.9625
+Epoch 17 / 20: Train Acc.: 0.9259 Train Loss: 0.2307 Eval Acc.: 0.9594
+Epoch 18 / 20: Train Acc.: 0.9291 Train Loss: 0.2265 Eval Acc.: 0.9577
+Epoch 19 / 20: Train Acc.: 0.9291 Train Loss: 0.2206 Eval Acc.: 0.9604
+Epoch 20 / 20: Train Acc.: 0.9282 Train Loss: 0.2281 Eval Acc.: 0.9629
+Experiment             epoch  train loss   train acc   eval loss    eval acc
+----------------------------------------------------------------------------
+no_reg                     1     0.42446     0.86592    37.32066     0.94680 
+no_reg                    11     0.07049     0.97780    29.57326     0.96380 
+no_reg                    20     0.04447     0.98498    36.40817     0.96090 
+----------------------------------------------------------------------------
+l2                         1     0.43156     0.86715    47.50935     0.93020 
+l2                        11     0.09476     0.97872    31.29652     0.96400 
+l2                        20     0.08036     0.98498    33.73543     0.96530 
+----------------------------------------------------------------------------
+l1                         1     0.49931     0.86370    60.94358     0.93570 
+l1                        11     0.22588     0.96367    45.78945     0.96440 
+l1                        20     0.20545     0.96915    45.76543     0.96390 
+----------------------------------------------------------------------------
+dropout                    1     0.55272     0.82463    45.72692     0.93130 
+dropout                   11     0.24367     0.92402    28.81995     0.95980 
+dropout                   20     0.22808     0.92815    26.47984     0.96290 

@@ -1,0 +1,6 @@
+epochs: 1
+lr: 0.0003710473778388177
+num_filters_1: 6
+num_filters_2: 28
+num_filters_3: 12
+optimizer: Adam

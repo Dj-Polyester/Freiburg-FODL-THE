@@ -1,0 +1,4 @@
+Loss: 0.13671875
+Config ID: 0_0
+Config: {'num_filters_1': 12, 'num_filters_2': 12, 'num_filters_3': 28, 'lr': 0.001, 'optimizer': 'Adam', 'epochs': 1}
+-------------------------------------------------------------------------------

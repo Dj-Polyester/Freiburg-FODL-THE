@@ -1,0 +1,5 @@
+lr: 0.029154859284176687
+num_filters_1: 27
+num_filters_2: 30
+num_filters_3: 20
+optimizer: Adam

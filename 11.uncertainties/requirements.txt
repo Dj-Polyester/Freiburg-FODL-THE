@@ -1,0 +1,7 @@
+matplotlib==3.5.2
+numpy==1.21.5
+pytest==7.1.2
+pycodestyle==2.8
+scipy==1.8
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.7.1+cpu

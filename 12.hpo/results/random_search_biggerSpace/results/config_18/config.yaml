@@ -1,0 +1,5 @@
+lr: 0.0003948981548744877
+num_filters_1: 20
+num_filters_2: 10
+num_filters_3: 6
+optimizer: SGD

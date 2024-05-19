@@ -1,0 +1,9 @@
+cost: 1
+info_dict:
+  cost: 1
+  test_accuracy: 0.9333
+  train_accuracy: 0.947021484375
+  train_time: 2.1191563606262207
+  val_errors:
+  - 0.06640625
+loss: 0.06640625

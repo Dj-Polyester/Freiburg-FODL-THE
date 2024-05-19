@@ -1,0 +1,6 @@
+epochs: 9
+lr: 0.0016105454082378482
+num_filters_1: 12
+num_filters_2: 12
+num_filters_3: 29
+optimizer: SGD

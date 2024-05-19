@@ -1,0 +1,65 @@
+\documentclass[addpoints]{exam}
+\pagestyle{headandfoot}
+\usepackage{amsmath, amsfonts}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{hyperref}
+\newcommand{\semester}{WS 2020/2021}
+\runningheader{\students}{Submission}{\semester}
+\runningfooter{}{\thepage}{}
+\headrule
+\footrule
+
+% ---------- Modify team name, students, exercise number here ----------
+\newcommand{\teamname}{shallow\_learning\_group}
+\newcommand{\students}{Batuhan Karaca}
+\newcommand{\assignmentnumber}{1}
+% ---------- End Modify ----------
+
+\title{Submission for Deep Learning Exercise \assignmentnumber}
+\author{Team: \teamname\\Students: \students}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    % ---------- Add Solution below here ----------
+
+    \section*{Pen and Paper task: Probability Theory: Bertrand’s Box Paradox}
+    Note that the variables $BB$, $WW$ and $BW$ denote the event for the card drawn, with two black sides, two white sides, and with one black and one white side respectively. Furthermore, $show B$ denotes when the drawn card's side facing up is black. Similarly white for $show W$.
+    \subsection*{1)}
+    \begin{align*}
+        p(show B) &= p(show B|BB)p(BB) + p(show B|WW)p(WW) + p(show B|BW)p(BW)\\
+        &= 1\frac{1}{3} + 0 + \frac{1}{2}\frac{1}{3}\\
+        &= \frac{1}{2}\\
+        p(show W) &= p(show W|BB)p(BB) + p(show W|WW)p(WW) + p(show W|BW)p(BW)\\
+        &= 0 + 1\frac{1}{3} + \frac{1}{2}\frac{1}{3}\\
+        &= \frac{1}{2}\\
+    \end{align*}
+    \subsection*{2)}
+    \begin{align*}
+        p(BB|show B) &= \frac{p(show B| BB)p(BB)}{p(show B)}\\
+        &= \frac{1\frac{1}{3}}{\frac{1}{2}}\\
+        &= \frac{2}{3}\\
+    \end{align*}
+    \subsection*{3)}
+    \begin{align*}
+        p(BW|show W) &= \frac{p(show W| BW)p(BW)}{p(show W)}\\
+        &= \frac{\frac{1}{2}\frac{1}{3}}{\frac{1}{2}}\\
+        &= \frac{1}{3}\\
+    \end{align*}
+    \section*{Question in BLR: How do the prior and posterior distributions differ? Why?}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{contour_lines.png}
+        \caption{Contour lines of prior and post distributions}
+        \label{fig:fig1}
+    \end{figure}
+
+    One can see the plot contours in figure~\ref{fig:fig1}. 
+    It is easier to interpret a 2x2 covariance matrix $\Sigma$. $\Sigma_{11}$ corresponds to the variance of $\omega_0$, whereas $\Sigma_{22}$ to the variance of $\omega_1$. Furthermore, $\Sigma_{12}$ and $\Sigma_{21}$ are equal to the covariance between $\omega_0$ and $\omega_1$. Width of the contours are determined by the variance of $\omega_0$, whereas height of the contours are determined by the variance of $\omega_1$. The sign of the slope $\frac{d\omega_1}{d\omega_0}$ of the semi-major axis (see \href{https://en.wikipedia.org/wiki/Ellipse}{here}) of the elliptic contours is the sign of the covariance (or linear dependence) between $\omega_0$ and $\omega_1$. The prior distribution is $N(\textbf{0},\textbf{I})$, hence symmetrical along all axes with zero mean. However, the fitted weights are negatively correlated (slope is negative) with smaller variances (less uncertanty); hence, we can say that the models estimations became more correlated, and less random.
+\end{document}

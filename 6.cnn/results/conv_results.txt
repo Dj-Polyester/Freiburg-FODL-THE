@@ -1,0 +1,44 @@
+Train:	X (50000, 1, 28, 28)	y (50000, 10)
+Val:	X (10000, 1, 28, 28)	y (10000, 10)
+Test:	X (10000, 1, 28, 28)	y (10000, 10)
+Training set size will be reduced to 10000
+Epoch 1 / 10:
+  Training Accuracy: 0.7213
+  Training Cost: 0.9413
+  Eval Accuracy: 0.8898
+Epoch 2 / 10:
+  Training Accuracy: 0.9156
+  Training Cost: 0.2854
+  Eval Accuracy: 0.9348
+Epoch 3 / 10:
+  Training Accuracy: 0.9379
+  Training Cost: 0.2060
+  Eval Accuracy: 0.9453
+Epoch 4 / 10:
+  Training Accuracy: 0.9535
+  Training Cost: 0.1598
+  Eval Accuracy: 0.9360
+Epoch 5 / 10:
+  Training Accuracy: 0.9595
+  Training Cost: 0.1375
+  Eval Accuracy: 0.9595
+Epoch 6 / 10:
+  Training Accuracy: 0.9626
+  Training Cost: 0.1229
+  Eval Accuracy: 0.9547
+Epoch 7 / 10:
+  Training Accuracy: 0.9669
+  Training Cost: 0.1045
+  Eval Accuracy: 0.9561
+Epoch 8 / 10:
+  Training Accuracy: 0.9712
+  Training Cost: 0.0938
+  Eval Accuracy: 0.9618
+Epoch 9 / 10:
+  Training Accuracy: 0.9733
+  Training Cost: 0.0840
+  Eval Accuracy: 0.9591
+Epoch 10 / 10:
+  Training Accuracy: 0.9765
+  Training Cost: 0.0793
+  Eval Accuracy: 0.9612

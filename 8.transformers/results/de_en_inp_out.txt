@@ -1,0 +1,8 @@
+Input : 
+wir werden ihnen einige geschichten über das meer in <UNK> erzählen
+
+Truth : 
+and we're going to tell you some stories from the sea here in video
+
+Output: 
+we're going to tell you some stories about the sea in <UNK> <UNK>

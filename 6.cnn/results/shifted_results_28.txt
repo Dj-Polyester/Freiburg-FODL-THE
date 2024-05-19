@@ -1,0 +1,49 @@
+Train:	X (50000, 1, 28, 28)	y (50000, 10)
+Val:	X (10000, 1, 28, 28)	y (10000, 10)
+Test:	X (10000, 1, 28, 28)	y (10000, 10)
+Training set size will be reduced to 10000
+Epoch 1 / 10:
+  Training Accuracy: 0.7323
+  Training Cost: 0.8115
+  Eval Accuracy: 0.8837
+Epoch 2 / 10:
+  Training Accuracy: 0.9123
+  Training Cost: 0.3002
+  Eval Accuracy: 0.9132
+Epoch 3 / 10:
+  Training Accuracy: 0.9338
+  Training Cost: 0.2188
+  Eval Accuracy: 0.9161
+Epoch 4 / 10:
+  Training Accuracy: 0.9488
+  Training Cost: 0.1735
+  Eval Accuracy: 0.9323
+Epoch 5 / 10:
+  Training Accuracy: 0.9523
+  Training Cost: 0.1511
+  Eval Accuracy: 0.9320
+Epoch 6 / 10:
+  Training Accuracy: 0.9581
+  Training Cost: 0.1299
+  Eval Accuracy: 0.9374
+Epoch 7 / 10:
+  Training Accuracy: 0.9649
+  Training Cost: 0.1092
+  Eval Accuracy: 0.9396
+Epoch 8 / 10:
+  Training Accuracy: 0.9742
+  Training Cost: 0.0835
+  Eval Accuracy: 0.9422
+Epoch 9 / 10:
+  Training Accuracy: 0.9756
+  Training Cost: 0.0768
+  Eval Accuracy: 0.9431
+Epoch 10 / 10:
+  Training Accuracy: 0.9776
+  Training Cost: 0.0711
+  Eval Accuracy: 0.9423
+Reload convolutional model from disk.
+Accuracy on data using an MLP:  0.9423
+Accuracy on shifted data using an MLP:  0.0915
+Accuracy on data using convolutional model:  0.9612
+Accuracy on shifted data using convolutional model:  0.1064

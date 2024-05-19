@@ -1,0 +1,32 @@
+Running on device: cuda
+Epoch:   1 /  15 Average train set loss: 238.6358
+Average test set loss: 210.7473
+Epoch:   2 /  15 Average train set loss: 207.0819
+Average test set loss: 207.0102
+Epoch:   3 /  15 Average train set loss: 206.5482
+Average test set loss: 206.3606
+Epoch:   4 /  15 Average train set loss: 206.4060
+Average test set loss: 206.1627
+Epoch:   5 /  15 Average train set loss: 206.3164
+Average test set loss: 206.0519
+Epoch:   6 /  15 Average train set loss: 206.2941
+Average test set loss: 205.9670
+Epoch:   7 /  15 Average train set loss: 206.2801
+Average test set loss: 205.9135
+Epoch:   8 /  15 Average train set loss: 206.2565
+Average test set loss: 205.9432
+Epoch:   9 /  15 Average train set loss: 206.2475
+Average test set loss: 205.9188
+Epoch:  10 /  15 Average train set loss: 206.2215
+Average test set loss: 205.8751
+Epoch:  11 /  15 Average train set loss: 206.2296
+Average test set loss: 205.8626
+Epoch:  12 /  15 Average train set loss: 206.2170
+Average test set loss: 205.8589
+Epoch:  13 /  15 Average train set loss: 206.2129
+Average test set loss: 205.9480
+Epoch:  14 /  15 Average train set loss: 206.2020
+Average test set loss: 205.9533
+Epoch:  15 /  15 Average train set loss: 206.1881
+Average test set loss: 205.9677
+Saved model to results_kl30.0/model.pth

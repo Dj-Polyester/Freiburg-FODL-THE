@@ -1,0 +1,15 @@
+Running on device: cpu
+Input: tensor([[0, 1, 0, 1, 1, 2, 0, 2, 0, 0]])
+
+Prediction: [[2 2 4]]
+
+Output step 0 attended mainly to Input steps: [0 2 6 8 9]
+Attention: [0.958 0.862 0.958 0.862 0.862 0.007 0.958 0.007 0.958 0.958]
+
+Output step 1 attended mainly to Input steps: [0 2 6 8 9]
+Attention: [1.000e+00 9.998e-01 1.000e+00 9.998e-01 9.998e-01 1.012e-07 1.000e+00
+ 1.012e-07 1.000e+00 1.000e+00]
+
+Output step 2 attended mainly to Input steps: [5 7]
+Attention: [0.413 0.296 0.413 0.296 0.296 0.586 0.413 0.586 0.413 0.413]
+

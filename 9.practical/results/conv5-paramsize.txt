@@ -1,0 +1,5 @@
+Running on device: cuda
+Number of params: 60554
+Files already downloaded and verified
+Finished Training
+Accuracy of the network on test images:56.0

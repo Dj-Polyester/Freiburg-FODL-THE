@@ -1,0 +1,94 @@
+Running on device: cpu
+Training and evaluating ConvNet1
+ConvNet1(
+  (layers): Sequential(
+    (0): Conv2d(3, 3, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Flatten(start_dim=1, end_dim=-1)
+    (4): Linear(in_features=768, out_features=10, bias=True)
+  )
+)
+Files already downloaded and verified
+[epoch 1, mini-batch #  5] loss: 2.303798
+[epoch 1, mini-batch # 10] loss: 2.291310
+[epoch 1, mini-batch # 15] loss: 2.301083
+[epoch 1, mini-batch # 20] loss: 2.289857
+[epoch 1, mini-batch # 25] loss: 2.293643
+[epoch 1, mini-batch # 30] loss: 2.293617
+[epoch 1, mini-batch # 35] loss: 2.269469
+[epoch 1, mini-batch # 40] loss: 2.281078
+[epoch 2, mini-batch #  5] loss: 2.272077
+[epoch 2, mini-batch # 10] loss: 2.259868
+[epoch 2, mini-batch # 15] loss: 2.262520
+[epoch 2, mini-batch # 20] loss: 2.255707
+[epoch 2, mini-batch # 25] loss: 2.254077
+[epoch 2, mini-batch # 30] loss: 2.234051
+[epoch 2, mini-batch # 35] loss: 2.239751
+[epoch 2, mini-batch # 40] loss: 2.249379
+[epoch 3, mini-batch #  5] loss: 2.225740
+[epoch 3, mini-batch # 10] loss: 2.219355
+[epoch 3, mini-batch # 15] loss: 2.209841
+[epoch 3, mini-batch # 20] loss: 2.214162
+[epoch 3, mini-batch # 25] loss: 2.201811
+[epoch 3, mini-batch # 30] loss: 2.195385
+[epoch 3, mini-batch # 35] loss: 2.180488
+[epoch 3, mini-batch # 40] loss: 2.176334
+[epoch 4, mini-batch #  5] loss: 2.146442
+[epoch 4, mini-batch # 10] loss: 2.154059
+[epoch 4, mini-batch # 15] loss: 2.135861
+[epoch 4, mini-batch # 20] loss: 2.115456
+[epoch 4, mini-batch # 25] loss: 2.123059
+[epoch 4, mini-batch # 30] loss: 2.124132
+[epoch 4, mini-batch # 35] loss: 2.098063
+[epoch 4, mini-batch # 40] loss: 2.073772
+[epoch 5, mini-batch #  5] loss: 2.089185
+[epoch 5, mini-batch # 10] loss: 2.065836
+[epoch 5, mini-batch # 15] loss: 2.053137
+[epoch 5, mini-batch # 20] loss: 2.051032
+[epoch 5, mini-batch # 25] loss: 1.997296
+[epoch 5, mini-batch # 30] loss: 1.992798
+[epoch 5, mini-batch # 35] loss: 2.009289
+[epoch 5, mini-batch # 40] loss: 2.071382
+[epoch 6, mini-batch #  5] loss: 2.002408
+[epoch 6, mini-batch # 10] loss: 2.000359
+[epoch 6, mini-batch # 15] loss: 1.966289
+[epoch 6, mini-batch # 20] loss: 1.953131
+[epoch 6, mini-batch # 25] loss: 1.994787
+[epoch 6, mini-batch # 30] loss: 1.965550
+[epoch 6, mini-batch # 35] loss: 1.946762
+[epoch 6, mini-batch # 40] loss: 1.942917
+[epoch 7, mini-batch #  5] loss: 1.943366
+[epoch 7, mini-batch # 10] loss: 1.946155
+[epoch 7, mini-batch # 15] loss: 1.910768
+[epoch 7, mini-batch # 20] loss: 1.921954
+[epoch 7, mini-batch # 25] loss: 1.908141
+[epoch 7, mini-batch # 30] loss: 1.907005
+[epoch 7, mini-batch # 35] loss: 1.935996
+[epoch 7, mini-batch # 40] loss: 1.877856
+[epoch 8, mini-batch #  5] loss: 1.915009
+[epoch 8, mini-batch # 10] loss: 1.882675
+[epoch 8, mini-batch # 15] loss: 1.854630
+[epoch 8, mini-batch # 20] loss: 1.872727
+[epoch 8, mini-batch # 25] loss: 1.869014
+[epoch 8, mini-batch # 30] loss: 1.946986
+[epoch 8, mini-batch # 35] loss: 1.881717
+[epoch 8, mini-batch # 40] loss: 1.936810
+[epoch 9, mini-batch #  5] loss: 1.857195
+[epoch 9, mini-batch # 10] loss: 1.859317
+[epoch 9, mini-batch # 15] loss: 1.908190
+[epoch 9, mini-batch # 20] loss: 1.844008
+[epoch 9, mini-batch # 25] loss: 1.896677
+[epoch 9, mini-batch # 30] loss: 1.866572
+[epoch 9, mini-batch # 35] loss: 1.839408
+[epoch 9, mini-batch # 40] loss: 1.998008
+[epoch 10, mini-batch #  5] loss: 1.871398
+[epoch 10, mini-batch # 10] loss: 1.893106
+[epoch 10, mini-batch # 15] loss: 1.826292
+[epoch 10, mini-batch # 20] loss: 1.842084
+[epoch 10, mini-batch # 25] loss: 1.828548
+[epoch 10, mini-batch # 30] loss: 1.813163
+[epoch 10, mini-batch # 35] loss: 1.807921
+[epoch 10, mini-batch # 40] loss: 1.805958
+Finished Training
+Accuracy of the network on test images: 32 %

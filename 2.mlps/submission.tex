@@ -1,0 +1,148 @@
+\documentclass[addpoints]{exam}
+\pagestyle{headandfoot}
+\usepackage{amsmath, amsfonts}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{hyperref}
+\newcommand{\semester}{WS 2020/2021}
+\runningheader{\students}{Submission}{\semester}
+\runningfooter{}{\thepage}{}
+\headrule
+\footrule
+
+% ---------- Modify team name, students, exercise number here ----------
+\newcommand{\teamname}{shallow\_learning\_group}
+\newcommand{\students}{Batuhan Karaca}
+\newcommand{\assignmentnumber}{1}
+% ---------- End Modify ----------
+
+\title{Submission for Deep Learning Exercise \assignmentnumber}
+\author{Team: \teamname\\Students: \students}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    % ---------- Add Solution below here ----------
+
+    \section*{Pen and Paper task: Forward Propagation}
+    \begin{align*}
+        X & = \begin{bmatrix}
+        x_1^T\\
+        x_2^T\\
+        \end{bmatrix}\\
+        & = \begin{bmatrix}
+        1 & 2 & 3\\
+        3 & 4 & 5\\
+        \end{bmatrix}\\
+        y & = \begin{bmatrix}
+        y_1\\
+        y_2\\
+        \end{bmatrix}\\
+        & = \begin{bmatrix}
+        0\\
+        1\\
+        \end{bmatrix}\\
+        X^{(1)} &= ReLU(XW^{(1)}+\textbf{1}b^{(1)}^T)\\
+        &= ReLU(\begin{bmatrix}
+        1 & 2 & 3\\
+        3 & 4 & 5\\
+        \end{bmatrix}\begin{bmatrix}
+            -2 & 1\\
+            2 & 0\\
+            -3 & 1\\
+        \end{bmatrix} + 
+        \begin{bmatrix}
+            1\\
+            1\\
+        \end{bmatrix}\begin{bmatrix}
+            3 & 0\\
+        \end{bmatrix})\\
+        &= ReLU(\begin{bmatrix}
+        -7 & 4\\
+        -13 & 8\\
+        \end{bmatrix} + 
+        \begin{bmatrix}
+            3 & 0\\
+            3 & 0\\
+        \end{bmatrix})\\
+        &= ReLU(\begin{bmatrix}
+            -4 & 4\\
+            -10 & 8\\
+        \end{bmatrix})\\
+        &= \begin{bmatrix}
+            0 & 4\\
+            0 & 8\\
+        \end{bmatrix}\\
+        \overline{y} &= Sigmoid(X^{(1)}W^{(2)}+\textbf{1}b^{(2)}^T)\\
+        &= Sigmoid(\begin{bmatrix}
+            0 & 4\\
+            0 & 8\\
+        \end{bmatrix}\begin{bmatrix}
+            -1\\
+            1\\
+        \end{bmatrix}+\begin{bmatrix}
+            1\\
+            1\\
+        \end{bmatrix}(-3))\\
+        &= Sigmoid(\begin{bmatrix}
+            4\\
+            8\\
+        \end{bmatrix}+\begin{bmatrix}
+            -3\\
+            -3\\
+        \end{bmatrix})\\
+        &= Sigmoid(\begin{bmatrix}
+            1\\
+            5\\
+        \end{bmatrix})\\
+        &\sim \begin{bmatrix}
+            0.7311\\
+            0.9933\\
+        \end{bmatrix}\\
+        \mathcal{L}(\overline{y}, y) &= -ylog\overline{y}-(1-y)log(1-\overline{y})\\
+        &= -\begin{bmatrix}
+        0\\
+        1\\
+        \end{bmatrix}log\begin{bmatrix}
+            0.7311\\
+            0.9933\\
+        \end{bmatrix}-\begin{bmatrix}
+        1\\
+        0\\
+        \end{bmatrix}log\begin{bmatrix}
+            0.2689\\
+            0.0067\\
+        \end{bmatrix}\\
+        &= -\begin{bmatrix}
+        0\\
+        1\\
+        \end{bmatrix}\begin{bmatrix}
+            -0.3132\\
+            -0.0067\\
+        \end{bmatrix}-\begin{bmatrix}
+        1\\
+        0\\
+        \end{bmatrix}\begin{bmatrix}
+            -1.3134\\
+            -5.0056\\
+        \end{bmatrix}\\
+        &= \begin{bmatrix}
+            0\\
+            0.0067\\
+        \end{bmatrix}+\begin{bmatrix}
+            1.3134\\
+            0\\
+        \end{bmatrix}\\
+        &= \begin{bmatrix}
+            1.3134\\
+            0.0067\\
+        \end{bmatrix}\\
+        (1.3134+0.0067)/2 & \sim 0.66\\
+    \end{align*}
+    \section*{Question: What is the best accuracy you can achieve in practice using Logistic Regression?}
+    Because both the logistic regression can create non-linear mappings (due to sigmoid) and XOR function are non-linear, the accuracy should be 100\% for a well-trained classifier.
+\end{document}

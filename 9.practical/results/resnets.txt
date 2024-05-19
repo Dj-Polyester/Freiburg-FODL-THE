@@ -1,0 +1,836 @@
+Running on device: cpu
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=1000, bias=True)
+)
+Files already downloaded and verified
+[epoch 1, mini-batch #  5] loss: 2.665505
+[epoch 1, mini-batch # 10] loss: 2.377473
+[epoch 1, mini-batch # 15] loss: 2.136029
+[epoch 1, mini-batch # 20] loss: 2.034278
+[epoch 1, mini-batch # 25] loss: 1.862533
+[epoch 1, mini-batch # 30] loss: 1.834974
+[epoch 1, mini-batch # 35] loss: 1.710554
+[epoch 1, mini-batch # 40] loss: 1.740787
+[epoch 2, mini-batch #  5] loss: 1.355608
+[epoch 2, mini-batch # 10] loss: 1.381220
+[epoch 2, mini-batch # 15] loss: 1.287416
+[epoch 2, mini-batch # 20] loss: 1.241519
+[epoch 2, mini-batch # 25] loss: 1.216167
+[epoch 2, mini-batch # 30] loss: 1.163417
+[epoch 2, mini-batch # 35] loss: 1.211810
+[epoch 2, mini-batch # 40] loss: 1.202912
+[epoch 3, mini-batch #  5] loss: 0.917606
+[epoch 3, mini-batch # 10] loss: 0.949782
+[epoch 3, mini-batch # 15] loss: 0.949193
+[epoch 3, mini-batch # 20] loss: 0.896222
+[epoch 3, mini-batch # 25] loss: 0.910643
+[epoch 3, mini-batch # 30] loss: 0.915197
+[epoch 3, mini-batch # 35] loss: 0.860447
+[epoch 3, mini-batch # 40] loss: 0.889432
+[epoch 4, mini-batch #  5] loss: 0.713795
+[epoch 4, mini-batch # 10] loss: 0.711200
+[epoch 4, mini-batch # 15] loss: 0.692646
+[epoch 4, mini-batch # 20] loss: 0.627283
+[epoch 4, mini-batch # 25] loss: 0.672504
+[epoch 4, mini-batch # 30] loss: 0.717162
+[epoch 4, mini-batch # 35] loss: 0.650858
+[epoch 4, mini-batch # 40] loss: 0.677490
+[epoch 5, mini-batch #  5] loss: 0.433311
+[epoch 5, mini-batch # 10] loss: 0.537350
+[epoch 5, mini-batch # 15] loss: 0.507374
+[epoch 5, mini-batch # 20] loss: 0.488984
+[epoch 5, mini-batch # 25] loss: 0.487595
+[epoch 5, mini-batch # 30] loss: 0.502278
+[epoch 5, mini-batch # 35] loss: 0.494916
+[epoch 5, mini-batch # 40] loss: 0.788550
+[epoch 6, mini-batch #  5] loss: 0.370167
+[epoch 6, mini-batch # 10] loss: 0.408107
+[epoch 6, mini-batch # 15] loss: 0.387076
+[epoch 6, mini-batch # 20] loss: 0.423094
+[epoch 6, mini-batch # 25] loss: 0.422612
+[epoch 6, mini-batch # 30] loss: 0.424381
+[epoch 6, mini-batch # 35] loss: 0.395456
+[epoch 6, mini-batch # 40] loss: 0.549611
+[epoch 7, mini-batch #  5] loss: 0.277893
+[epoch 7, mini-batch # 10] loss: 0.377682
+[epoch 7, mini-batch # 15] loss: 0.385545
+[epoch 7, mini-batch # 20] loss: 0.275809
+[epoch 7, mini-batch # 25] loss: 0.341429
+[epoch 7, mini-batch # 30] loss: 0.323367
+[epoch 7, mini-batch # 35] loss: 0.290540
+[epoch 7, mini-batch # 40] loss: 0.653853
+[epoch 8, mini-batch #  5] loss: 0.231106
+[epoch 8, mini-batch # 10] loss: 0.214359
+[epoch 8, mini-batch # 15] loss: 0.275542
+[epoch 8, mini-batch # 20] loss: 0.321945
+[epoch 8, mini-batch # 25] loss: 0.297566
+[epoch 8, mini-batch # 30] loss: 0.268845
+[epoch 8, mini-batch # 35] loss: 0.258960
+[epoch 8, mini-batch # 40] loss: 0.460297
+[epoch 9, mini-batch #  5] loss: 0.163970
+[epoch 9, mini-batch # 10] loss: 0.187201
+[epoch 9, mini-batch # 15] loss: 0.219450
+[epoch 9, mini-batch # 20] loss: 0.188664
+[epoch 9, mini-batch # 25] loss: 0.198980
+[epoch 9, mini-batch # 30] loss: 0.201286
+[epoch 9, mini-batch # 35] loss: 0.191042
+[epoch 9, mini-batch # 40] loss: 0.385734
+[epoch 10, mini-batch #  5] loss: 0.128385
+[epoch 10, mini-batch # 10] loss: 0.203836
+[epoch 10, mini-batch # 15] loss: 0.207923
+[epoch 10, mini-batch # 20] loss: 0.198233
+[epoch 10, mini-batch # 25] loss: 0.153420
+[epoch 10, mini-batch # 30] loss: 0.165111
+[epoch 10, mini-batch # 35] loss: 0.167973
+[epoch 10, mini-batch # 40] loss: 0.478845
+Finished Training
+Accuracy of the network on test images: 60 %
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=1000, bias=True)
+)
+Files already downloaded and verified
+[epoch 1, mini-batch #  5] loss: 2.621108
+[epoch 1, mini-batch # 10] loss: 2.564358
+[epoch 1, mini-batch # 15] loss: 2.473874
+[epoch 1, mini-batch # 20] loss: 2.439521
+[epoch 1, mini-batch # 25] loss: 2.388726
+[epoch 1, mini-batch # 30] loss: 2.337206
+[epoch 1, mini-batch # 35] loss: 2.268036
+[epoch 1, mini-batch # 40] loss: 2.321731
+[epoch 2, mini-batch #  5] loss: 2.185279
+[epoch 2, mini-batch # 10] loss: 2.149028
+[epoch 2, mini-batch # 15] loss: 2.115484
+[epoch 2, mini-batch # 20] loss: 2.075424
+[epoch 2, mini-batch # 25] loss: 2.035887
+[epoch 2, mini-batch # 30] loss: 2.032844
+[epoch 2, mini-batch # 35] loss: 1.979945
+[epoch 2, mini-batch # 40] loss: 2.006736
+[epoch 3, mini-batch #  5] loss: 1.935389
+[epoch 3, mini-batch # 10] loss: 1.966038
+[epoch 3, mini-batch # 15] loss: 1.947749
+[epoch 3, mini-batch # 20] loss: 1.893339
+[epoch 3, mini-batch # 25] loss: 1.902485
+[epoch 3, mini-batch # 30] loss: 1.838430
+[epoch 3, mini-batch # 35] loss: 1.861694
+[epoch 3, mini-batch # 40] loss: 1.834905
+[epoch 4, mini-batch #  5] loss: 1.841168
+[epoch 4, mini-batch # 10] loss: 1.820105
+[epoch 4, mini-batch # 15] loss: 1.783329
+[epoch 4, mini-batch # 20] loss: 1.832337
+[epoch 4, mini-batch # 25] loss: 1.765026
+[epoch 4, mini-batch # 30] loss: 1.789877
+[epoch 4, mini-batch # 35] loss: 1.790130
+[epoch 4, mini-batch # 40] loss: 1.882394
+[epoch 5, mini-batch #  5] loss: 1.750121
+[epoch 5, mini-batch # 10] loss: 1.705074
+[epoch 5, mini-batch # 15] loss: 1.681491
+[epoch 5, mini-batch # 20] loss: 1.772651
+[epoch 5, mini-batch # 25] loss: 1.733108
+[epoch 5, mini-batch # 30] loss: 1.734025
+[epoch 5, mini-batch # 35] loss: 1.780832
+[epoch 5, mini-batch # 40] loss: 1.777463
+[epoch 6, mini-batch #  5] loss: 1.747237
+[epoch 6, mini-batch # 10] loss: 1.756033
+[epoch 6, mini-batch # 15] loss: 1.661612
+[epoch 6, mini-batch # 20] loss: 1.757283
+[epoch 6, mini-batch # 25] loss: 1.659953
+[epoch 6, mini-batch # 30] loss: 1.656341
+[epoch 6, mini-batch # 35] loss: 1.739885
+[epoch 6, mini-batch # 40] loss: 1.581898
+[epoch 7, mini-batch #  5] loss: 1.685119
+[epoch 7, mini-batch # 10] loss: 1.604952
+[epoch 7, mini-batch # 15] loss: 1.720525
+[epoch 7, mini-batch # 20] loss: 1.636559
+[epoch 7, mini-batch # 25] loss: 1.643141
+[epoch 7, mini-batch # 30] loss: 1.637914
+[epoch 7, mini-batch # 35] loss: 1.704887
+[epoch 7, mini-batch # 40] loss: 1.795643
+[epoch 8, mini-batch #  5] loss: 1.541999
+[epoch 8, mini-batch # 10] loss: 1.589514
+[epoch 8, mini-batch # 15] loss: 1.656885
+[epoch 8, mini-batch # 20] loss: 1.653965
+[epoch 8, mini-batch # 25] loss: 1.638179
+[epoch 8, mini-batch # 30] loss: 1.634946
+[epoch 8, mini-batch # 35] loss: 1.703467
+[epoch 8, mini-batch # 40] loss: 1.610379
+[epoch 9, mini-batch #  5] loss: 1.558116
+[epoch 9, mini-batch # 10] loss: 1.587791
+[epoch 9, mini-batch # 15] loss: 1.621589
+[epoch 9, mini-batch # 20] loss: 1.668161
+[epoch 9, mini-batch # 25] loss: 1.602705
+[epoch 9, mini-batch # 30] loss: 1.600121
+[epoch 9, mini-batch # 35] loss: 1.600246
+[epoch 9, mini-batch # 40] loss: 1.600312
+[epoch 10, mini-batch #  5] loss: 1.585925
+[epoch 10, mini-batch # 10] loss: 1.615234
+[epoch 10, mini-batch # 15] loss: 1.562645
+[epoch 10, mini-batch # 20] loss: 1.569543
+[epoch 10, mini-batch # 25] loss: 1.594961
+[epoch 10, mini-batch # 30] loss: 1.580973
+[epoch 10, mini-batch # 35] loss: 1.536410
+[epoch 10, mini-batch # 40] loss: 1.541180
+Finished Training
+Accuracy of the network on test images: 37 %
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=1000, bias=True)
+)
+Files already downloaded and verified
+[epoch 1, mini-batch #  5] loss: 2.596606
+[epoch 1, mini-batch # 10] loss: 2.379784
+[epoch 1, mini-batch # 15] loss: 2.188604
+[epoch 1, mini-batch # 20] loss: 2.125956
+[epoch 1, mini-batch # 25] loss: 1.965484
+[epoch 1, mini-batch # 30] loss: 1.857651
+[epoch 1, mini-batch # 35] loss: 1.806066
+[epoch 1, mini-batch # 40] loss: 1.768171
+[epoch 2, mini-batch #  5] loss: 1.595882
+[epoch 2, mini-batch # 10] loss: 1.576906
+[epoch 2, mini-batch # 15] loss: 1.550897
+[epoch 2, mini-batch # 20] loss: 1.505870
+[epoch 2, mini-batch # 25] loss: 1.619066
+[epoch 2, mini-batch # 30] loss: 1.669929
+[epoch 2, mini-batch # 35] loss: 1.622531
+[epoch 2, mini-batch # 40] loss: 1.645383
+[epoch 3, mini-batch #  5] loss: 1.408931
+[epoch 3, mini-batch # 10] loss: 1.449253
+[epoch 3, mini-batch # 15] loss: 1.441416
+[epoch 3, mini-batch # 20] loss: 1.418836
+[epoch 3, mini-batch # 25] loss: 1.396748
+[epoch 3, mini-batch # 30] loss: 1.417731
+[epoch 3, mini-batch # 35] loss: 1.475168
+[epoch 3, mini-batch # 40] loss: 1.522757
+[epoch 4, mini-batch #  5] loss: 1.248751
+[epoch 4, mini-batch # 10] loss: 1.360144
+[epoch 4, mini-batch # 15] loss: 1.407300
+[epoch 4, mini-batch # 20] loss: 1.361000
+[epoch 4, mini-batch # 25] loss: 1.318346
+[epoch 4, mini-batch # 30] loss: 1.307613
+[epoch 4, mini-batch # 35] loss: 1.316824
+[epoch 4, mini-batch # 40] loss: 1.447279
+[epoch 5, mini-batch #  5] loss: 1.239123
+[epoch 5, mini-batch # 10] loss: 1.251777
+[epoch 5, mini-batch # 15] loss: 1.235471
+[epoch 5, mini-batch # 20] loss: 1.255434
+[epoch 5, mini-batch # 25] loss: 1.256320
+[epoch 5, mini-batch # 30] loss: 1.199130
+[epoch 5, mini-batch # 35] loss: 1.264560
+[epoch 5, mini-batch # 40] loss: 1.608503
+[epoch 6, mini-batch #  5] loss: 1.159713
+[epoch 6, mini-batch # 10] loss: 1.233072
+[epoch 6, mini-batch # 15] loss: 1.200961
+[epoch 6, mini-batch # 20] loss: 1.268405
+[epoch 6, mini-batch # 25] loss: 1.230913
+[epoch 6, mini-batch # 30] loss: 1.183167
+[epoch 6, mini-batch # 35] loss: 1.198858
+[epoch 6, mini-batch # 40] loss: 1.310140
+[epoch 7, mini-batch #  5] loss: 1.151160
+[epoch 7, mini-batch # 10] loss: 1.183908
+[epoch 7, mini-batch # 15] loss: 1.141848
+[epoch 7, mini-batch # 20] loss: 1.182845
+[epoch 7, mini-batch # 25] loss: 1.160574
+[epoch 7, mini-batch # 30] loss: 1.205048
+[epoch 7, mini-batch # 35] loss: 1.143962
+[epoch 7, mini-batch # 40] loss: 1.242413
+[epoch 8, mini-batch #  5] loss: 1.116848
+[epoch 8, mini-batch # 10] loss: 1.058776
+[epoch 8, mini-batch # 15] loss: 1.106004
+[epoch 8, mini-batch # 20] loss: 1.152501
+[epoch 8, mini-batch # 25] loss: 1.105092
+[epoch 8, mini-batch # 30] loss: 1.112139
+[epoch 8, mini-batch # 35] loss: 1.101351
+[epoch 8, mini-batch # 40] loss: 1.361118
+[epoch 9, mini-batch #  5] loss: 1.071792
+[epoch 9, mini-batch # 10] loss: 1.072273
+[epoch 9, mini-batch # 15] loss: 1.115452
+[epoch 9, mini-batch # 20] loss: 1.071361
+[epoch 9, mini-batch # 25] loss: 1.061205
+[epoch 9, mini-batch # 30] loss: 1.074317
+[epoch 9, mini-batch # 35] loss: 1.076068
+[epoch 9, mini-batch # 40] loss: 1.565983
+[epoch 10, mini-batch #  5] loss: 1.012508
+[epoch 10, mini-batch # 10] loss: 1.046218
+[epoch 10, mini-batch # 15] loss: 1.080473
+[epoch 10, mini-batch # 20] loss: 1.081812
+[epoch 10, mini-batch # 25] loss: 1.085010
+[epoch 10, mini-batch # 30] loss: 1.030733
+[epoch 10, mini-batch # 35] loss: 1.023049
+[epoch 10, mini-batch # 40] loss: 1.288775
+Finished Training
+Accuracy of the network on test images: 44 %
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=1000, bias=True)
+)
+Files already downloaded and verified
+[epoch 1, mini-batch #  5] loss: 2.449767
+[epoch 1, mini-batch # 10] loss: 2.252699
+[epoch 1, mini-batch # 15] loss: 2.109082
+[epoch 1, mini-batch # 20] loss: 1.915080
+[epoch 1, mini-batch # 25] loss: 1.835357
+[epoch 1, mini-batch # 30] loss: 1.900072
+[epoch 1, mini-batch # 35] loss: 1.786174
+[epoch 1, mini-batch # 40] loss: 1.793989
+[epoch 2, mini-batch #  5] loss: 1.581451
+[epoch 2, mini-batch # 10] loss: 1.623305
+[epoch 2, mini-batch # 15] loss: 1.505422
+[epoch 2, mini-batch # 20] loss: 1.492930
+[epoch 2, mini-batch # 25] loss: 1.497714
+[epoch 2, mini-batch # 30] loss: 1.491187
+[epoch 2, mini-batch # 35] loss: 1.503580
+[epoch 2, mini-batch # 40] loss: 1.653951
+[epoch 3, mini-batch #  5] loss: 1.366078
+[epoch 3, mini-batch # 10] loss: 1.429848
+[epoch 3, mini-batch # 15] loss: 1.353927
+[epoch 3, mini-batch # 20] loss: 1.368433
+[epoch 3, mini-batch # 25] loss: 1.354604
+[epoch 3, mini-batch # 30] loss: 1.342750
+[epoch 3, mini-batch # 35] loss: 1.344909
+[epoch 3, mini-batch # 40] loss: 1.389415
+[epoch 4, mini-batch #  5] loss: 1.275673
+[epoch 4, mini-batch # 10] loss: 1.229164
+[epoch 4, mini-batch # 15] loss: 1.250346
+[epoch 4, mini-batch # 20] loss: 1.286403
+[epoch 4, mini-batch # 25] loss: 1.277861
+[epoch 4, mini-batch # 30] loss: 1.295134
+[epoch 4, mini-batch # 35] loss: 1.256778
+[epoch 4, mini-batch # 40] loss: 1.503570
+[epoch 5, mini-batch #  5] loss: 1.148736
+[epoch 5, mini-batch # 10] loss: 1.193989
+[epoch 5, mini-batch # 15] loss: 1.167858
+[epoch 5, mini-batch # 20] loss: 1.226130
+[epoch 5, mini-batch # 25] loss: 1.147955
+[epoch 5, mini-batch # 30] loss: 1.228422
+[epoch 5, mini-batch # 35] loss: 1.314055
+[epoch 5, mini-batch # 40] loss: 1.318033
+[epoch 6, mini-batch #  5] loss: 1.112816
+[epoch 6, mini-batch # 10] loss: 1.138674
+[epoch 6, mini-batch # 15] loss: 1.140749
+[epoch 6, mini-batch # 20] loss: 1.099572
+[epoch 6, mini-batch # 25] loss: 1.109400
+[epoch 6, mini-batch # 30] loss: 1.224967
+[epoch 6, mini-batch # 35] loss: 1.197591
+[epoch 6, mini-batch # 40] loss: 1.217026
+[epoch 7, mini-batch #  5] loss: 1.046985
+[epoch 7, mini-batch # 10] loss: 1.055463
+[epoch 7, mini-batch # 15] loss: 1.109481
+[epoch 7, mini-batch # 20] loss: 1.066806
+[epoch 7, mini-batch # 25] loss: 1.109034
+[epoch 7, mini-batch # 30] loss: 1.134436
+[epoch 7, mini-batch # 35] loss: 1.110243
+[epoch 7, mini-batch # 40] loss: 1.305490
+[epoch 8, mini-batch #  5] loss: 1.024573
+[epoch 8, mini-batch # 10] loss: 1.045471
+[epoch 8, mini-batch # 15] loss: 1.017459
+[epoch 8, mini-batch # 20] loss: 1.062689
+[epoch 8, mini-batch # 25] loss: 1.038258
+[epoch 8, mini-batch # 30] loss: 1.102181
+[epoch 8, mini-batch # 35] loss: 1.108403
+[epoch 8, mini-batch # 40] loss: 1.324479
+[epoch 9, mini-batch #  5] loss: 0.954888
+[epoch 9, mini-batch # 10] loss: 1.004273
+[epoch 9, mini-batch # 15] loss: 1.025304
+[epoch 9, mini-batch # 20] loss: 1.023540
+[epoch 9, mini-batch # 25] loss: 1.022876
+[epoch 9, mini-batch # 30] loss: 0.996001
+[epoch 9, mini-batch # 35] loss: 1.041059
+[epoch 9, mini-batch # 40] loss: 1.416401
+[epoch 10, mini-batch #  5] loss: 0.983941
+[epoch 10, mini-batch # 10] loss: 1.006353
+[epoch 10, mini-batch # 15] loss: 1.011332
+[epoch 10, mini-batch # 20] loss: 0.937826
+[epoch 10, mini-batch # 25] loss: 0.979950
+[epoch 10, mini-batch # 30] loss: 1.011110
+[epoch 10, mini-batch # 35] loss: 1.020511
+[epoch 10, mini-batch # 40] loss: 1.299272
+Finished Training
+Accuracy of the network on test images: 42 %
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=1000, bias=True)
+)
+Files already downloaded and verified
+[epoch 1, mini-batch #  5] loss: 2.692194
+[epoch 1, mini-batch # 10] loss: 2.311624
+[epoch 1, mini-batch # 15] loss: 2.181347
+[epoch 1, mini-batch # 20] loss: 2.098977
+[epoch 1, mini-batch # 25] loss: 1.900998
+[epoch 1, mini-batch # 30] loss: 1.835180
+[epoch 1, mini-batch # 35] loss: 1.766457
+[epoch 1, mini-batch # 40] loss: 1.875667
+[epoch 2, mini-batch #  5] loss: 1.526264
+[epoch 2, mini-batch # 10] loss: 1.543244
+[epoch 2, mini-batch # 15] loss: 1.476436
+[epoch 2, mini-batch # 20] loss: 1.406720
+[epoch 2, mini-batch # 25] loss: 1.408230
+[epoch 2, mini-batch # 30] loss: 1.371440
+[epoch 2, mini-batch # 35] loss: 1.376573
+[epoch 2, mini-batch # 40] loss: 1.480230
+[epoch 3, mini-batch #  5] loss: 1.217110
+[epoch 3, mini-batch # 10] loss: 1.224481
+[epoch 3, mini-batch # 15] loss: 1.172745
+[epoch 3, mini-batch # 20] loss: 1.161132
+[epoch 3, mini-batch # 25] loss: 1.139809
+[epoch 3, mini-batch # 30] loss: 1.118755
+[epoch 3, mini-batch # 35] loss: 1.159080
+[epoch 3, mini-batch # 40] loss: 1.364003
+[epoch 4, mini-batch #  5] loss: 0.969669
+[epoch 4, mini-batch # 10] loss: 1.013822
+[epoch 4, mini-batch # 15] loss: 0.992896
+[epoch 4, mini-batch # 20] loss: 1.013424
+[epoch 4, mini-batch # 25] loss: 0.981125
+[epoch 4, mini-batch # 30] loss: 0.970828
+[epoch 4, mini-batch # 35] loss: 0.956141
+[epoch 4, mini-batch # 40] loss: 0.980207
+[epoch 5, mini-batch #  5] loss: 0.847426
+[epoch 5, mini-batch # 10] loss: 0.842617
+[epoch 5, mini-batch # 15] loss: 0.765335
+[epoch 5, mini-batch # 20] loss: 0.858655
+[epoch 5, mini-batch # 25] loss: 0.755520
+[epoch 5, mini-batch # 30] loss: 0.837618
+[epoch 5, mini-batch # 35] loss: 0.826415
+[epoch 5, mini-batch # 40] loss: 0.943947
+[epoch 6, mini-batch #  5] loss: 0.652766
+[epoch 6, mini-batch # 10] loss: 0.758298
+[epoch 6, mini-batch # 15] loss: 0.713629
+[epoch 6, mini-batch # 20] loss: 0.689373
+[epoch 6, mini-batch # 25] loss: 0.733797
+[epoch 6, mini-batch # 30] loss: 0.671619
+[epoch 6, mini-batch # 35] loss: 0.732128
+[epoch 6, mini-batch # 40] loss: 1.039241
+[epoch 7, mini-batch #  5] loss: 0.613918
+[epoch 7, mini-batch # 10] loss: 0.624917
+[epoch 7, mini-batch # 15] loss: 0.627866
+[epoch 7, mini-batch # 20] loss: 0.600945
+[epoch 7, mini-batch # 25] loss: 0.549531
+[epoch 7, mini-batch # 30] loss: 0.553207
+[epoch 7, mini-batch # 35] loss: 0.665875
+[epoch 7, mini-batch # 40] loss: 1.010989
+[epoch 8, mini-batch #  5] loss: 0.506623
+[epoch 8, mini-batch # 10] loss: 0.492612
+[epoch 8, mini-batch # 15] loss: 0.491616
+[epoch 8, mini-batch # 20] loss: 0.520555
+[epoch 8, mini-batch # 25] loss: 0.492873
+[epoch 8, mini-batch # 30] loss: 0.508361
+[epoch 8, mini-batch # 35] loss: 0.506845
+[epoch 8, mini-batch # 40] loss: 0.556268
+[epoch 9, mini-batch #  5] loss: 0.418892
+[epoch 9, mini-batch # 10] loss: 0.418467
+[epoch 9, mini-batch # 15] loss: 0.408607
+[epoch 9, mini-batch # 20] loss: 0.388941
+[epoch 9, mini-batch # 25] loss: 0.384728
+[epoch 9, mini-batch # 30] loss: 0.384230
+[epoch 9, mini-batch # 35] loss: 0.418580
+[epoch 9, mini-batch # 40] loss: 0.664262
+[epoch 10, mini-batch #  5] loss: 0.336476
+[epoch 10, mini-batch # 10] loss: 0.316236
+[epoch 10, mini-batch # 15] loss: 0.399884
+[epoch 10, mini-batch # 20] loss: 0.394477
+[epoch 10, mini-batch # 25] loss: 0.340385
+[epoch 10, mini-batch # 30] loss: 0.361625
+[epoch 10, mini-batch # 35] loss: 0.334694
+[epoch 10, mini-batch # 40] loss: 0.582875
+Finished Training
+Accuracy of the network on test images: 51 %
